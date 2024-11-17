@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 5. Write a program that finds and returns the longest word in a given sentence. You
+    // can assume that the sentence consists of words separated by spaces.
+
+        let str = "the brown fox gguuuuuuuuhuh";
+        let str1= str.split(" ")
+        // document.write(str1)
+        let word_length=str1[0].length
+        let max_word = null;
+        for(let i=1; i<str1.length+1; i++){
+           if(word_length<=str1[i-1].length){
+            word_length=str1[i-1].length
+            max_word=str1[i-1];
+           }
+        }
+        document.write(word_length+"<br/>");
+        document.write(max_word);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 2. Create a program that checks if a given string is a palindrome. A palindrome is a
+    // word, phrase, or sequence of characters that reads the same forwards and
+    // backward (ignoring spaces, punctuation, and capitalization).
+
+        let a = "navan";
+        let b ="";
+        for(let i=a.length-1; i>=0; i--){
+            b+=a[i];
+        }
+        if(a==b){
+            document.write("true");
+        } else{
+            document.write("false");
+        }
+    </script>
+</body>
+</html>
